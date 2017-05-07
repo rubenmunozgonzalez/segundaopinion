@@ -1,0 +1,668 @@
+/*! Customized By V.R.Jewel for Codeboxr{V-1.0} */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+.vjbbones-body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+h1, h2, h3, h4 {
+    color: #0059a3;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+.faq_heading p,
+.tlmd-join-us p,
+.carousel-caption p,
+.tlmd_inner_page_heading p {
+    text-align: center;
+}
+
+.tlmd-main-menu {
+    background: #0059a3;
+    color: #fff;
+    /*height:52px !important;*/
+}
+
+.header_sign_in {
+    padding-top: 5%;
+}
+
+.sign_in, .join {
+    padding: 10px;
+    background: #0059a3;
+}
+
+.sign_in a, .join a {
+    text-decoration: none;
+    background: #0059a3;
+    color: #fff;
+
+    /*border-radius: 55%;*/
+}
+
+/*===================================Nav bar end================================*/
+/* navbar */
+.navbar-default {
+    background: #0059a3;
+    border: transparent;
+    font-size: 20px;
+
+}
+
+.navbar-default > .container-fluid {
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+/*    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #111;
+    }*/
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .nav > li {
+    z-index: 10000;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+/*    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #111;
+        background-color: #0059a3;
+    }*/
+/*    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #111;
+        background-color: #0059a3;
+    }*/
+/* caret */
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    /*        border-top-color: #fff;
+            border-bottom-color: #fff;
+            z-index: 999;*/
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #0059a3;
+    border-bottom-color: #0059a3;
+}
+
+/*    .navbar-default .navbar-nav > .open > a .caret,
+    .navbar-default .navbar-nav > .open > a:hover .caret,
+    .navbar-default .navbar-nav > .open > a:focus .caret {
+        border-top-color: #555;
+        border-bottom-color: #555;
+    }*/
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #fff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/*===================================Nav bar end================================*/
+
+.carousel-caption h2 {
+    color: #eee;
+    background: #0059a3;
+    text-shadow: 1px 2px 3px #111;
+    position: absolute;
+    left: 66px;
+    top: -152px;
+    width: 53.5%;
+}
+
+.carousel-caption {
+    bottom: 100px;
+    left: 200px;
+
+}
+
+/*=================================== Front massege start ================================*/
+.tlmd-join-us {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.tlmd-join-us h1 {
+    font-size: 60px;
+}
+
+.tlmd-join-doctor h2, .tlmd-join-patient h2 {
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.tlmd-join-doctor p, .tlmd-join-patient p {
+    color: #fff;
+    padding: 10px;
+}
+
+.button_login_widget_doctor {
+    padding: 5px 10px 5px 10px;
+    background: #f1f1f1;
+    color: #f10026;
+}
+
+.button_login_widget_patient {
+    padding: 5px 10px 5px 10px;
+    background: #f1f1f1;
+    color: #a600a6;
+}
+
+.button_login_widget_patient:hover,
+.button_login_widget_doctor:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tlmd-join-doctor {
+    background: #f10026;
+    color: #fff;
+    padding: 7px;
+    border-radius: 4px;
+    height: auto;
+}
+
+.tlmd-join-patient {
+    background: #a600a6;
+    color: #fff;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.tlmd-specialized-doctor h1 {
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.tlmd-single-special-doctor {
+    padding: 3px 7px 5px 7px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.tlmd-single-special-doctor h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.tlmd-single-special-doctor p {
+    padding-bottom: 15px;
+}
+
+.more-details-specialize {
+    padding: 5px 10px 5px 10px;
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+.more-details-specialize:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*=================================== Front massege End ================================*/
+
+/*====================================  page body ======================================*/
+.tlmd_inner_page_body {
+    padding: 25px 0px 30px 0px;
+}
+
+input[name*="gender"]{
+    background: #00a65a !important;
+}
+
+.tlmd_inner_page_heading {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.form_section_title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+
+}
+
+.form_section_title h4 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight:400;
+    font-size: 25px;
+    padding: 7px 0px 7px 20px;
+    background: #0059a3;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.control-label {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight:300;
+    padding: 4px 10px 4px;
+    color: #fff;
+    background: #0059a3;
+    border-radius: 2px;
+
+}
+
+.tlmd_form_page_image {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.tlmd_form_page_image img {
+    padding-top: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.tlmd_join_page_description h1 {
+    font-size: 35px;
+}
+
+.tlmd_signup_button {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    background: #f80012;
+    border:#f80012;
+    border-radius: 2px;
+
+}
+
+.tlmd_signup_button > a {
+    color: #f1f1f1;
+}
+
+.inside_body_submit{
+    background: #419641;
+    font-size: 20px;
+    border: #419641;
+}
+
+.radio input[type="radio"]{
+      padding-left:5000px;
+}
+/*=================================== Footer start ================================*/
+footer {
+    background: #212025;
+    color: #eee;
+    margin-top: 10px;
+    border-top: 2px solid #0059a3;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.footer_widget h3 {
+    color: #ddd;
+    text-align: left;
+}
+
+.footer_widget h3:hover {
+
+}
+
+.footer_widget {
+    color: #aaa;
+}
+
+.footer_widget p span {
+    display: block;
+    padding-top: 5px;
+}
+
+.widget_first {
+    color: #0059a3;
+    display: inline;
+}
+
+.lower-footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #111;
+    color: #fff;
+    margin-top: 0px;
+    border-top: none;
+}
+
+/*=================================== Footer End ================================*/
+
+/* ==========================================================================
+   Helper classes************ Author's end
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

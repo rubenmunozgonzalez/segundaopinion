@@ -1,0 +1,26 @@
+.login-box-body{
+   /*background: #ff0084;*/ 
+}
+.login-page{
+   background-image: url("../img/login_bg.jpg");
+   background-repeat:no-repeat;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.login-logo a b{
+    color:#367fa9;
+}
+.mandetory_star{
+    color:red;
+}
+.form-level{
+    text-align: right;
+}
+.dropdown-menu {
+    min-width: 20px!important;
+}
+.box-header{
+    /*border-bottom: 1px solid#ddd;*/
+}

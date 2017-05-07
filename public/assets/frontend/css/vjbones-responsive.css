@@ -1,0 +1,41 @@
+/*! Customized By V.R.Jewel for Codeboxr{V-1.0} */
+
+
+/* ==========================================================================
+    CodeboxrJewel  Author's custom  Responsive styles
+   ========================================================================== */
+
+   /* Large desktop */
+   @media (min-width: 1200px) { 
+
+
+   }
+    
+   /* Portrait tablet to landscape and desktop */
+   @media (min-width: 768px) and (max-width: 979px) { 
+
+       
+   }
+    
+   /* Landscape phone to portrait tablet */
+   @media (max-width: 767px) { 
+
+    }
+    
+   /* Landscape phones and down */
+   @media (max-width: 480px) { 
+       .header_sign_in a{
+           text-decoration: none;
+           background: #0059a3;
+           color:#fff;
+       }
+       
+       .logo img {
+          height:80px;
+          width:70px;
+       }
+       .header_sign_in{
+           padding-top: 15%;
+       }
+   }
+   
