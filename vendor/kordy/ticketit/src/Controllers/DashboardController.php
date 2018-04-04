@@ -227,8 +227,6 @@ class DashboardController extends Controller
           }
         }
 
-        //die(dd($monthly_performance));
-
         if (request()->has('cat_page')) {
             $active_tab = 'cat';
         } elseif (request()->has('agents_page')) {
@@ -239,14 +237,24 @@ class DashboardController extends Controller
             $active_tab = 'cat';
         }
 
-        return $this->exportArray($monthly_performance['interval']);
+        return $this->exportArray($monthly_performance);
     }
 
     function exportArray($arr) {
-        Excel::create(storage_path().'descargas/test.xml', function($excel) use ($arr) {
-          $excel->sheet('First sheet', function($sheet) use ($arr) {
-            //$sheet->rows(array_keys($arr), null, 'A1');
-            $sheet->rows($arr, null, 'B1');
+        $arr2 = [];
+        $i = 0;
+        foreach ($arr['interval'] as $key => $values) {
+          $arr2[$i]['Fecha'] = $key;
+          $j = 0;
+          foreach ($values as $val) {
+            $arr2[$i][$arr['categories'][$j++]] = $val;
+          }
+          $i++;
+        }
+        Excel::create(storage_path().'descargas/test.xml', function($excel) use ($arr2) {
+          $excel->sheet('First sheet', function($sheet) use ($arr2) {
+            $sheet->fromArray($arr2, null, 'A1', true);
+            //$sheet->rows($arr, null, 'B1');
           });
           // Set the title
           $excel->setTitle('Our new awesome title');

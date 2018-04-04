@@ -4,7 +4,7 @@
         <div class="col-md-8 col-md-offset-2 ">
             <div class="tlmd_inner_page_heading">
                 <h1> Pide una segunda opinión</h1>
-                <p>Registraté en nuestro sistema para poder crear una consulta on-line</p>
+                <p>Registraté en nuestro sistema para poder hacer tu consulta on-line</p>
                 <hr>
             </div>
         </div>

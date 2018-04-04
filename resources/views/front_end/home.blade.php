@@ -8,7 +8,7 @@
                 <div class="col-md-6 wow fadeInUp animated">
                     <div class="tlmd-join-us ">
                         <h2>¡Preguntanos una segunda opinión!</h2>
-                        <p>Clínica CEMTRO te ofrece la posibilidad de realizar consultas online a través de nuestro servicio Segunda Opinión.</p>
+                        <p>Clínica CEMTRO te ofrece la posibilidad de realizar consultas online a través de nuestro servicio Segunda Opinión. Se trata de una consulta de pago en la que se permiten adjuntar los informes y la documentación relativa a su caso para que nuestros especialistas lo estudien detalladamente. El coste de la consulta es de 80€.</p>
                     </div>
                 </div>
                 <div class="col-md-3"></div>

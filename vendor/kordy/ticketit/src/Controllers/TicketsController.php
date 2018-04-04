@@ -280,7 +280,7 @@ class TicketsController extends Controller
         $close_perm = $this->permToClose($id);
         $reopen_perm = $this->permToReopen($id);
 
-        $cat_agents = Models\Agent::lists('name', 'id');
+        $cat_agents = Models\Agent::where('ticketit_agent', '=', '1')->lists('name', 'id');
         //die(var_dump($cat_agents));
         //if (is_array($cat_agents)) {
             $agent_lists =  $cat_agents;
@@ -533,7 +533,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($categories as $cat) {
@@ -572,7 +572,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($categories as $cat) {
@@ -611,7 +611,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($categories as $cat) {
@@ -650,7 +650,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($agents as $age) {
@@ -689,7 +689,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($agents as $age) {
@@ -728,7 +728,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($agents as $age) {
@@ -767,7 +767,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($users as $user) {
@@ -806,7 +806,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($users as $user) {
@@ -845,7 +845,7 @@ class TicketsController extends Controller
 
         $from = $begin_date;
         $to = $end_date;
-        setlocale(LC_TIME, 'Spanish');
+        setlocale(LC_TIME, 'es_ES.utf8');
         while ( $from <= $to) {
             $records['interval'][$from->formatLocalized('%d %B %Y')] = [];
             foreach ($users as $user) {

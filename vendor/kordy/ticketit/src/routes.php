@@ -56,8 +56,8 @@ Route::group(['middleware' => \Kordy\Ticketit\Helpers\LaravelVersion::authMiddle
         Route::get("$main_route_path/{id}/reopen", 'Kordy\Ticketit\Controllers\TicketsController@reopen')
             ->name("$main_route.reopen");
 
-        Route::get("$main_route_path/payments/download", 'Kordy\Ticketit\Controllers\ExportController@download')
-            ->name("$main_route.download");
+        Route::get("$main_route_path/payments/download", 'Kordy\Ticketit\Controllers\ExportController@downloadPayments')
+            ->name("$main_route.payments.download");
 
         Route::get("$main_route_path/{id}/download/{filename}", 'Kordy\Ticketit\Controllers\TicketsController@download')
             ->name("$main_route.download");
